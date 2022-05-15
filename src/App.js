@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Nav from "./components/Nav"
+import Ashes from "./pages/Ashes";
+import Gear from "./pages/Gear";
+import Home from "./pages/Home"
+import Items from "./pages/Items";
+import Talismans from "./pages/Talismans";
+import World from "./pages/World";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return(
+    <>
+    <Nav />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/Ashes" element={<Ashes />} />
+      <Route path="/Gear" element={<Gear />} />
+      <Route path="/Items" element={<Items />} />
+      <Route path="/Talismans" element={<Talismans />} />
+      <Route path="/World" element={<World />} />
+    </Routes>
+    </>
+  )
 }
 
 export default App;
