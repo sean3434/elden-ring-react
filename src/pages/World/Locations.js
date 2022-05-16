@@ -13,7 +13,7 @@ function LocationsList() {
         getLocations();
     }, [])
 
-console.log(locations);
+// console.log(locations);
 
     return (
         <>

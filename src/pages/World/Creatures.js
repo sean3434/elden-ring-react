@@ -13,7 +13,7 @@ function CreaturesList() {
         getCreatures();
     }, [])
 
-console.log(creatures);
+// console.log(creatures);
 
     return (
         <>
