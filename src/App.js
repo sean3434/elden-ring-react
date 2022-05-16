@@ -4,7 +4,7 @@ import Nav from "./components/Nav"
 import Ashes from "./pages/Ashes";
 import Gear from "./pages/Gear";
 import Home from "./pages/Home"
-import Items from "./pages/Items";
+import ItemsList from "./pages/Items";
 import Talismans from "./pages/Talismans";
 import World from "./pages/World";
 import AshesOfWar from "./pages/Ashes/AshesOfWar";
@@ -37,7 +37,7 @@ function App() {
         <Route path="Gear/Armors" element={<Armors />}></Route>
         <Route path="Gear/Shields" element={<Shields />}></Route>
         <Route path="Gear/Weapons" element={<Weapons />}></Route>
-      <Route path="/Items" element={<Items />} />
+      <Route path="/Items" element={<ItemsList />} />
       <Route path="/Talismans" element={<Talismans />} />
       <Route path="/World" element={<World />} />
         <Route path="World/Bosses" element={<Bosses />}></Route>
