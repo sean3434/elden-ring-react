@@ -5,7 +5,7 @@ import Ashes from "./pages/Ashes";
 import Gear from "./pages/Gear";
 import Home from "./pages/Home"
 import ItemsList from "./pages/Items";
-import Talismans from "./pages/Talismans";
+import TalismansList from "./pages/Talismans";
 import World from "./pages/World";
 import AshesOfWar from "./pages/Ashes/AshesOfWar";
 import Incantations from "./pages/Ashes/Incantations";
@@ -38,7 +38,7 @@ function App() {
         <Route path="Gear/Shields" element={<Shields />}></Route>
         <Route path="Gear/Weapons" element={<Weapons />}></Route>
       <Route path="/Items" element={<ItemsList />} />
-      <Route path="/Talismans" element={<Talismans />} />
+      <Route path="/Talismans" element={<TalismansList />} />
       <Route path="/World" element={<World />} />
         <Route path="World/Bosses" element={<Bosses />}></Route>
         <Route path="World/Creatures" element={<Creatures />}></Route>
