@@ -13,7 +13,7 @@ function SpiritsList() {
         getSpirits();
     }, [])
 
-console.log(spirits);
+// console.log(spirits);
 
     return (
         <>
