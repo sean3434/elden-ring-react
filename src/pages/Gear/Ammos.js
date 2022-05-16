@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Ammos() {
+function AmmosList() {
   return (
     <div>Ammos</div>
   )
 }
 
-export default Ammos
+export default AmmosList

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Weapons() {
+function WeaponsList() {
   return (
     <div>Weapons</div>
   )
 }
 
-export default Weapons
+export default WeaponsList

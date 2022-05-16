@@ -1,9 +1,9 @@
 import React from 'react'
 
-function NPCs() {
+function NPCsList() {
   return (
     <div>NPCs</div>
   )
 }
 
-export default NPCs
+export default NPCsList

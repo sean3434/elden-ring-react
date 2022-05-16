@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Bosses() {
+function BossesList() {
   return (
     <div>Bosses</div>
   )
 }
 
-export default Bosses
+export default BossesList

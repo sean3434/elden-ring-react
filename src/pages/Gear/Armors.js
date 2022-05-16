@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Armors() {
+function ArmorsList() {
   return (
     <div>Armors</div>
   )
 }
 
-export default Armors
+export default ArmorsList

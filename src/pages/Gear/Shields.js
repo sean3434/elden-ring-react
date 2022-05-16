@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Shields() {
+function ShieldsList() {
   return (
     <div>Shields</div>
   )
 }
 
-export default Shields
+export default ShieldsList

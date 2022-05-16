@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Spirits() {
+function SpiritsList() {
   return (
     <div>Spirits</div>
   )
 }
 
-export default Spirits
+export default SpiritsList

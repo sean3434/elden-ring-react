@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Sorceries() {
+function SorceriesList() {
   return (
     <div>Sorceries</div>
   )
 }
 
-export default Sorceries
+export default SorceriesList
