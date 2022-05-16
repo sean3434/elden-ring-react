@@ -13,7 +13,7 @@ function IncantationsList() {
         getIncantations();
     }, [])
 
-console.log(incantations);
+// console.log(incantations);
 
     return (
         <>

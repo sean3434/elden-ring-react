@@ -13,7 +13,7 @@ function ItemsList() {
         getItems();
     }, [])
 
-console.log(items);
+// console.log(items);
 
     return (
         <>

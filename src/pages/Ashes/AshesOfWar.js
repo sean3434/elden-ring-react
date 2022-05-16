@@ -13,7 +13,7 @@ function AshesOfWarList() {
         getAshes();
     }, [])
 
-console.log(ashes);
+// console.log(ashes);
 
     return (
         <>

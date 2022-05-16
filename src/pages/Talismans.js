@@ -13,7 +13,7 @@ function TalismansList() {
         getTalismans();
     }, [])
 
-console.log(talismans);
+// console.log(talismans);
 
     return (
         <>
