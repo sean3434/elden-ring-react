@@ -21,7 +21,7 @@ function ShieldsList() {
                 <div key={index}>
                     <h2>{shield.name}</h2>
                     <img src={shield.image} alt={shield.name}/>
-                    {/* <h2>{shield.description}</h2> */}
+                    <h2>{shield.description}</h2>
                     <hr/>
             </div>
             )) : <h3>LOADING...</h3>}

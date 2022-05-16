@@ -13,7 +13,7 @@ function WeaponsList() {
         getWeapons();
     }, [])
 
-console.log(weapons);
+// console.log(weapons);
 
     return (
         <>
