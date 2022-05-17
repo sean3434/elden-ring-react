@@ -13,7 +13,7 @@ function NPCsList() {
         getNPCs();
     }, [])
 
-console.log(npcs);
+// console.log(npcs);
 
     return (
         <>

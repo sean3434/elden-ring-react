@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.items {
+  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.talsimans {
+  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.world {
+  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* #video {
+  position: fixed;
+  top: 10vh;
+  margin: -20vh 0px 0px -5vw;
+  z-index: -1;
+  min-width: 108%;
+  min-height: 113%; */
+
+  /* margin-top: 10vh; */
+  /* object-fit: contain; */
+  /* object-position: center; */
+  /* position: fixed; */
+
+/* position: fixed;
+top: 10vh;
+min-width: 100vw;
+min-height: 90vh; */
+
+/* position: fixed;
+z-index: -1;
+top: 10vh;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+min-width: 100vw;
+min-height: 90vh; */
+/* } */

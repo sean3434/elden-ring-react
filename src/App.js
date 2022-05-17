@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Nav from "./components/Nav"
+import Navbar from "./components/Nav"
 import Home from "./pages/Home"
 import Ashes from "./pages/Ashes";
 import Gear from "./pages/Gear";
@@ -24,7 +24,7 @@ import NPCsList from "./pages/World/NPCs";
 function App() {
   return(
     <>
-    <Nav />
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/Ashes" element={<Ashes />} />

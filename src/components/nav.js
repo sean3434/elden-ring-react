@@ -1,29 +1,32 @@
-import React from "react"
-import { Link } from "react-router-dom"
+import React from "react";
+import { Link } from "react-router-dom";
+import './Nav.css'
+import image from '../Media/eldenringtext.png'
 
-const Nav = (props) => {
+const Navbar = () => {
 	return (
-		<div className="nav">
+		<div className="navbar">
+			<img src={image} alt='Elden Ring'/>
 			<Link to="/">
-				<div>Home</div>
+				<div className='navtext'>Home</div>
 			</Link>
 			<Link to="/Ashes">
-				<div>Ashes</div>
+				<div className='navtext'>Magic</div>
 			</Link>
             <Link to="/Gear">
-				<div>Gear</div>
+				<div className='navtext'>Gear</div>
 			</Link>
             <Link to="/Items">
-				<div>Items</div>
+				<div className='navtext'>Items</div>
 			</Link>
             <Link to="/Talismans">
-				<div>Talismans</div>
+				<div className='navtext'>Talismans</div>
 			</Link>
             <Link to="/World">
-				<div>World</div>
+				<div className='navtext'>World</div>
 			</Link>
 		</div>
 	)
 }
 
-export default Nav
+export default Navbar

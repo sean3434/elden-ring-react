@@ -1,8 +1,12 @@
 import React from 'react'
+import './Home.css'
+// import video from '../Media/EldenNightGrace.mp4'
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='home'>
+    
+    </div>
   )
 }
 
