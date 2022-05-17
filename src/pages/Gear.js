@@ -13,7 +13,7 @@ function Gear() {
                     <h2>Armors</h2>
                 </Link>
                 <Link to='/Gear/Shields'>
-                     <h2>Shields</h2>
+                    <h2>Shields</h2>
                 </Link>
                 <Link to='/Gear/Weapons'>
                     <h2>Weapons</h2>

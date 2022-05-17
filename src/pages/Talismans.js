@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Talismans.css'
 
 function TalismansList() {
     const [talismans, setTalismans] = useState(null)
@@ -16,16 +17,18 @@ function TalismansList() {
 // console.log(talismans);
 
     return (
-        <>
-            {talismans ? talismans.map((talisman, index) => (
-                <div key={index}>
-                    <h2>{talisman.name}</h2>
-                    <img src={talisman.image} alt={talisman.name}/>
-                    <h2>{talisman.effect}</h2>
-                    <hr/>
+        <div className='talismans'>
+            <div className='talismanscontainer'>
+                {talismans ? talismans.map((talisman, index) => (
+                    <div key={index}>
+                        <h2>{talisman.name}</h2>
+                        <img src={talisman.image} alt={talisman.name}/>
+                        <h2>{talisman.effect}</h2>
+                        <hr/>
+                    </div>
+                )) : <h3>LOADING...</h3>}
             </div>
-            )) : <h3>LOADING...</h3>}
-        </>
+        </div>
     )
 }
 

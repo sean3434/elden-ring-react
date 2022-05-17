@@ -37,31 +37,17 @@
   }
 }
 
-.items {
-  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.talsimans {
-  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.world {
-  background: url('./Media/Gear.jpeg') no-repeat center fixed;     
-  background-size: cover;
-  min-height: 100vh;
+h2 {
+    color: white
 }
 
 /* #video {
-  position: fixed;
-  top: 10vh;
-  margin: -20vh 0px 0px -5vw;
-  z-index: -1;
-  min-width: 108%;
-  min-height: 113%; */
+    position: fixed;
+    top: 10vh;
+    margin: -20vh 0px 0px -5vw;
+    z-index: -1;
+    min-width: 108%;
+    min-height: 113%; */
 
   /* margin-top: 10vh; */
   /* object-fit: contain; */

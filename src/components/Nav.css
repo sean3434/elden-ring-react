@@ -15,7 +15,7 @@
     font-size: 2.5vw;
     align-items: center;
     position: sticky; top: 0;
-    position: relative;
+    /* position: relative; */
 }
 
 img {

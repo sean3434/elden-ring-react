@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Items.css'
 
 function ItemsList() {
     const [items, setItems] = useState(null)
@@ -16,16 +17,18 @@ function ItemsList() {
 // console.log(items);
 
     return (
-        <>
-            {items ? items.map((item, index) => (
-                <div key={index}>
-                    <h2>{item.name}</h2>
-                    <img src={item.image} alt={item.name}/>
-                    <h2>{item.effect}</h2>
-                    <hr/>
+        <div className='items'>
+            <div className='itemscontainer'>
+                {items ? items.map((item, index) => (
+                    <div key={index}>
+                        <h2>{item.name}</h2>
+                        <img src={item.image} alt={item.name}/>
+                        <h2>{item.effect}</h2>
+                        <hr/>
+                </div>
+                )) : <h3>LOADING...</h3>}
             </div>
-            )) : <h3>LOADING...</h3>}
-        </>
+        </div>
     )
 }
 
