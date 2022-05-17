@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../Gear.css'
 
 function WeaponsList() {
     const [weapons, setWeapons] = useState(null)
@@ -16,16 +17,18 @@ function WeaponsList() {
 // console.log(weapons);
 
     return (
-        <>
+        <div className='gear'>
+            <div className='gearcontainer'>
             {weapons ? weapons.map((weapon, index) => (
                 <div key={index}>
                     <h2>{weapon.name}</h2>
                     <img src={weapon.image} alt={weapon.name}/>
                     <h2>{weapon.description}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

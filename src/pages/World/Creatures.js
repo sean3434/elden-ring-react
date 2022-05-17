@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../World.css'
 
 function CreaturesList() {
     const [creatures, setCreatures] = useState(null)
@@ -16,16 +17,18 @@ function CreaturesList() {
 // console.log(creatures);
 
     return (
-        <>
+        <div className='world'>
+            <div className='worldcontainer'>
             {creatures ? creatures.map((creature, index) => (
                 <div key={index}>
                     <h2>{creature.name}</h2>
                     <img src={creature.image} alt={creature.name}/>
                     <h2>{creature.description}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

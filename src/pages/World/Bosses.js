@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../World.css'
 
 function BossesList() {
     const [bosses, setBosses] = useState(null)
@@ -16,16 +17,18 @@ function BossesList() {
 // console.log(bosses);
 
     return (
-        <>
+        <div className='world'>
+            <div className='worldcontainer'>
             {bosses ? bosses.map((boss, index) => (
                 <div key={index}>
                     <h2>{boss.name}</h2>
                     <img src={boss.image} alt={boss.name}/>
                     <h2>{boss.description}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

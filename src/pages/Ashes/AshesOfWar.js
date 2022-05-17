@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../Magic.css'
 
 function AshesOfWarList() {
     const [ashes, setAshes] = useState(null)
@@ -16,16 +17,18 @@ function AshesOfWarList() {
 // console.log(ashes);
 
     return (
-        <>
-            {ashes ? ashes.map((ash, index) => (
-                <div key={index}>
-                    <h2>{ash.name}</h2>
-                    <img src={ash.image} alt={ash.name}/>
-                    <h2>{ash.description}</h2>
-                    <hr/>
+        <div className='magic'>
+            <div className='magiccontainer'>
+                {ashes ? ashes.map((ash, index) => (
+                    <div key={index}>
+                        <h2>{ash.name}</h2>
+                        <img src={ash.image} alt={ash.name}/>
+                        <h2>{ash.description}</h2>
+                        <hr/>
+                </div>
+                )) : <h3>LOADING...</h3>}
             </div>
-            )) : <h3>LOADING...</h3>}
-        </>
+        </div>
     )
 }
 

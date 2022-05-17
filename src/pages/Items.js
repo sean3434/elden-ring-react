@@ -25,7 +25,7 @@ function ItemsList() {
                         <img src={item.image} alt={item.name}/>
                         <h2>{item.effect}</h2>
                         <hr/>
-                </div>
+                    </div>
                 )) : <h3>LOADING...</h3>}
             </div>
         </div>

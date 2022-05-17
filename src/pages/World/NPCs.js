@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../World.css'
 
 function NPCsList() {
     const [npcs, setNPCs] = useState(null)
@@ -16,7 +17,8 @@ function NPCsList() {
 // console.log(npcs);
 
     return (
-        <>
+        <div className='world'>
+            <div className='worldcontainer'>
             {npcs ? npcs.map((npc, index) => (
                 <div key={index}>
                     <h2>{npc.name}</h2>
@@ -24,9 +26,10 @@ function NPCsList() {
                     <h2>{npc.role}</h2>
                     <h2>{npc.location}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

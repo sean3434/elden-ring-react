@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../Magic.css'
 
 function SorceriesList() {
     const [sorceries, setSorceries] = useState(null)
@@ -16,16 +17,18 @@ function SorceriesList() {
 // console.log(sorceries);
 
     return (
-        <>
-            {sorceries ? sorceries.map((sorceries, index) => (
-                <div key={index}>
-                    <h2>{sorceries.name}</h2>
-                    <img src={sorceries.image} alt={sorceries.name}/>
-                    <h2>{sorceries.effects}</h2>
-                    <hr/>
-            </div>
+        <div className='magic'>
+            <div className='magiccontainer'>
+                {sorceries ? sorceries.map((sorceries, index) => (
+                    <div key={index}>
+                        <h2>{sorceries.name}</h2>
+                        <img src={sorceries.image} alt={sorceries.name}/>
+                        <h2>{sorceries.effects}</h2>
+                        <hr/>
+                    </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

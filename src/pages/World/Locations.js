@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../World.css'
 
 function LocationsList() {
     const [locations, setLocations] = useState(null)
@@ -16,16 +17,18 @@ function LocationsList() {
 // console.log(locations);
 
     return (
-        <>
+        <div className='world'>
+            <div className='worldcontainer'>
             {locations ? locations.map((location, index) => (
                 <div key={index}>
                     <h2>{location.name}</h2>
                     <img src={location.image} alt={location.name}/>
                     <h2>{location.description}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import '../Gear.css'
 
 function ShieldsList() {
     const [shields, setShields] = useState(null)
@@ -16,16 +17,18 @@ function ShieldsList() {
 // console.log(shields);
 
     return (
-        <>
+        <div className='gear'>
+            <div className='gearcontainer'>
             {shields ? shields.map((shield, index) => (
                 <div key={index}>
                     <h2>{shield.name}</h2>
                     <img src={shield.image} alt={shield.name}/>
                     <h2>{shield.description}</h2>
                     <hr/>
-            </div>
+                </div>
             )) : <h3>LOADING...</h3>}
-        </>
+            </div>
+        </div>
     )
 }
 

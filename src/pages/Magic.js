@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import './Ashes.css'
+import './Magic.css'
 // import video from '../Media/EldenNightGrace.mp4'
 
 function Ashes() {
     return (
-        <div className='ashes'>
-            <div className='ashescontainer'>
+        <div className='magic'>
+            <div className='magiccontainer'>
                 <Link to='/Ashes/AshesOfWar'>
                     <h2>Ashes Of War</h2>
                 </Link>

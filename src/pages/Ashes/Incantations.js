@@ -16,16 +16,18 @@ function IncantationsList() {
 // console.log(incantations);
 
     return (
-        <>
-            {incantations ? incantations.map((incantation, index) => (
-                <div key={index}>
-                    <h2>{incantation.name}</h2>
-                    <img src={incantation.image} alt={incantation.name}/>
-                    <h2>{incantation.effects}</h2>
-                    <hr/>
+        <div className='magic'>
+            <div className='magiccontainer'>
+                {incantations ? incantations.map((incantation, index) => (
+                    <div key={index}>
+                        <h2>{incantation.name}</h2>
+                        <img src={incantation.image} alt={incantation.name}/>
+                        <h2>{incantation.effects}</h2>
+                        <hr/>
+                </div>
+                )) : <h3>LOADING...</h3>}
             </div>
-            )) : <h3>LOADING...</h3>}
-        </>
+        </div>
     )
 }
 

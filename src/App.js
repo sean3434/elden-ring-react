@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Nav"
 import Home from "./pages/Home"
-import Ashes from "./pages/Ashes";
+import Ashes from "./pages/Magic";
 import Gear from "./pages/Gear";
 import ItemsList from "./pages/Items";
 import TalismansList from "./pages/Talismans";
