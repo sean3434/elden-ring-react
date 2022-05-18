@@ -20,7 +20,7 @@
     background-color: #1e1e1ed2;
     display: flex;
     flex-flow: column wrap;
-    width: 250px;
+    max-width: 250px;
     margin: 1em 0em 1em 0em;
     padding: 1em 0em 0em 0em;
 }
