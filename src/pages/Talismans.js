@@ -18,13 +18,12 @@ function TalismansList() {
 
     return (
         <div className='talismans'>
-            <div className='talismanscontainer'>
+            <div className='itemscontainer'>
                 {talismans ? talismans.map((talisman, index) => (
-                    <div key={index}>
-                        <h2>{talisman.name}</h2>
-                        <img src={talisman.image} alt={talisman.name}/>
-                        <h2>{talisman.effect}</h2>
-                        <hr/>
+                    <div className='singleitemcontainer' key={index}>
+                        <h2 className='itemname' >{talisman.name}</h2>
+                        <img className='itemimage' src={talisman.image} alt={talisman.name}/>
+                        <h2 className='itemeffect' >{talisman.effect}</h2>
                     </div>
                 )) : <h3>LOADING...</h3>}
             </div>
