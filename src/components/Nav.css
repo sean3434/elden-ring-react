@@ -6,6 +6,7 @@
     text-decoration: none; */
     
     /* position: fixed; */
+    z-index: 5;
     max-width: 100vw;
     display: flex;
     background-color: #1e1e1ef8;
