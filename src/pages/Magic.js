@@ -3,20 +3,20 @@ import { Link } from 'react-router-dom'
 import './Magic.css'
 // import video from '../Media/EldenNightGrace.mp4'
 
-function Ashes() {
+function Magic() {
     return (
         <div className='magic'>
             <div className='magiccontainer'>
-                <Link to='/Ashes/AshesOfWar'>
+                <Link to='/Magic/AshesOfWar'>
                     <h2>Ashes Of War</h2>
                 </Link>
-                <Link to='/Ashes/Incantations'>
+                <Link to='/Magic/Incantations'>
                     <h2>Incantations</h2>
                 </Link>
-                <Link to='/Ashes/Sorceries'>
+                <Link to='/Magic/Sorceries'>
                     <h2>Sorceries</h2>
                 </Link>
-                <Link to='/Ashes/Spirits'>
+                <Link to='/Magic/Spirits'>
                     <h2>Spirits</h2>
                 </Link>
             </div>
@@ -24,4 +24,4 @@ function Ashes() {
     )
 }
 
-export default Ashes
+export default Magic

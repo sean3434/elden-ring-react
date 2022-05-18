@@ -20,11 +20,10 @@ function ItemsList() {
         <div className='items'>
             <div className='itemscontainer'>
                 {items ? items.map((item, index) => (
-                    <div key={index}>
-                        <h2>{item.name}</h2>
-                        <img src={item.image} alt={item.name}/>
-                        <h2>{item.effect}</h2>
-                        <hr/>
+                    <div className='singleitemcontainer'key={index}>
+                        <h2 className='itemname'>{item.name}</h2>
+                        <img className='itemimage'src={item.image} alt={item.name}/>
+                        <h2 className='itemeffect'>{item.effect}</h2>
                     </div>
                 )) : <h3>LOADING...</h3>}
             </div>

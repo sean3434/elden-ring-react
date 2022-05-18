@@ -2,15 +2,15 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Nav"
 import Home from "./pages/Home"
-import Ashes from "./pages/Magic";
+import Magic from "./pages/Magic";
 import Gear from "./pages/Gear";
 import ItemsList from "./pages/Items";
 import TalismansList from "./pages/Talismans";
 import World from "./pages/World";
-import AshesOfWarList from "./pages/Ashes/AshesOfWar";
-import IncantationsList from "./pages/Ashes/Incantations";
-import SorceriesList from "./pages/Ashes/Sorceries";
-import SpiritsList from "./pages/Ashes/Spirits";
+import AshesOfWarList from "./pages/Magic/AshesOfWar";
+import IncantationsList from "./pages/Magic/Incantations";
+import SorceriesList from "./pages/Magic/Sorceries";
+import SpiritsList from "./pages/Magic/Spirits";
 import AmmosList from "./pages/Gear/Ammos";
 import ArmorsList from "./pages/Gear/Armors";
 import ShieldsList from "./pages/Gear/Shields";
@@ -27,11 +27,11 @@ function App() {
     <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Ashes" element={<Ashes />} />
-        <Route path="Ashes/AshesOfWar" element={<AshesOfWarList />}></Route>
-        <Route path="Ashes/Incantations" element={<IncantationsList />}></Route>
-        <Route path="Ashes/Sorceries" element={<SorceriesList />}></Route>
-        <Route path="Ashes/Spirits" element={<SpiritsList />}></Route>
+      <Route path="/Magic" element={<Magic />} />
+        <Route path="Magic/AshesOfWar" element={<AshesOfWarList />}></Route>
+        <Route path="Magic/Incantations" element={<IncantationsList />}></Route>
+        <Route path="Magic/Sorceries" element={<SorceriesList />}></Route>
+        <Route path="Magic/Spirits" element={<SpiritsList />}></Route>
       <Route path="/Gear" element={<Gear />} />
         <Route path="Gear/Ammos" element={<AmmosList />}></Route>
         <Route path="Gear/Armors" element={<ArmorsList />}></Route>

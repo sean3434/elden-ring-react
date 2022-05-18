@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import './Nav.css'
 import image from '../Media/eldenringtext.png'
 
@@ -7,24 +7,24 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<img src={image} alt='Elden Ring'/>
-			<Link to="/">
+			<NavLink to="/">
 				<div className='navtext'>Home</div>
-			</Link>
-			<Link to="/Ashes">
+			</NavLink>
+			<NavLink to="/Magic">
 				<div className='navtext'>Magic</div>
-			</Link>
-            <Link to="/Gear">
+			</NavLink>
+            <NavLink to="/Gear">
 				<div className='navtext'>Gear</div>
-			</Link>
-            <Link to="/Items">
+			</NavLink>
+            <NavLink to="/Items">
 				<div className='navtext'>Items</div>
-			</Link>
-            <Link to="/Talismans">
+			</NavLink>
+            <NavLink to="/Talismans">
 				<div className='navtext'>Talismans</div>
-			</Link>
-            <Link to="/World">
+			</NavLink>
+            <NavLink to="/World">
 				<div className='navtext'>World</div>
-			</Link>
+			</NavLink>
 		</div>
 	)
 }
