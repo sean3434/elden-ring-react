@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBeer } from 'react-icons/fa';
 import './Footer.css'
 import image from '../Media/zlinkedinlogo.png'
 import image2 from '../Media/zgithub.png'
