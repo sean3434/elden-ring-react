@@ -18,13 +18,12 @@ function LocationsList() {
 
     return (
         <div className='world'>
-            <div className='worldcontainer'>
+            <div className='itemscontainer'>
             {locations ? locations.map((location, index) => (
-                <div key={index}>
-                    <h2>{location.name}</h2>
-                    <img src={location.image} alt={location.name}/>
-                    <h2>{location.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{location.name}</h2>
+                    <img className='itemimage'src={location.image} alt={location.name}/>
+                    <h2 className='itemeffect'>{location.description}</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

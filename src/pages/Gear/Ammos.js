@@ -18,13 +18,12 @@ function AmmosList() {
 
     return (
         <div className='gear'>
-            <div className='gearcontainer'>
+            <div className='itemscontainer'>
             {ammos ? ammos.map((ammo, index) => (
-                <div key={index}>
-                    <h2>{ammo.name}</h2>
-                    <img src={ammo.image} alt={ammo.name}/>
-                    <h2>{ammo.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{ammo.name}</h2>
+                    <img className='itemimage' src={ammo.image} alt={ammo.name}/>
+                    <h2 className='itemeffect'>{ammo.description}</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

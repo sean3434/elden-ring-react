@@ -17,13 +17,12 @@ function SpiritsList() {
 
     return (
         <div className='magic'>
-            <div className='magiccontainer'>
+            <div className='itemscontainer'>
             {spirits ? spirits.map((spirit, index) => (
-                <div key={index}>
-                    <h2>{spirit.name}</h2>
-                    <img src={spirit.image} alt={spirit.name}/>
-                    <h2>{spirit.effect}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{spirit.name}</h2>
+                    <img className='itemimage' src={spirit.image} alt={spirit.name}/>
+                    <h2 className='itemeffect'>{spirit.effect}</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

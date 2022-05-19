@@ -18,13 +18,12 @@ function ShieldsList() {
 
     return (
         <div className='gear'>
-            <div className='gearcontainer'>
+            <div className='itemscontainer'>
             {shields ? shields.map((shield, index) => (
-                <div key={index}>
-                    <h2>{shield.name}</h2>
-                    <img src={shield.image} alt={shield.name}/>
-                    <h2>{shield.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{shield.name}</h2>
+                    <img className='itemimage'src={shield.image} alt={shield.name}/>
+                    <h2 className='itemeffect'>{shield.description.substring(0,125)}..</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

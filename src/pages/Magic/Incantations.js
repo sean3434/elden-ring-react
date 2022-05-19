@@ -17,13 +17,12 @@ function IncantationsList() {
 
     return (
         <div className='magic'>
-            <div className='magiccontainer'>
+            <div className='itemscontainer'>
                 {incantations ? incantations.map((incantation, index) => (
-                    <div key={index}>
-                        <h2>{incantation.name}</h2>
-                        <img src={incantation.image} alt={incantation.name}/>
-                        <h2>{incantation.effects}</h2>
-                        <hr/>
+                    <div className='singleitemcontainer'key={index}>
+                        <h2 className='itemname'>{incantation.name}</h2>
+                        <img className='itemimage'src={incantation.image} alt={incantation.name}/>
+                        <h2 className='itemeffect'>{incantation.effects}</h2>
                 </div>
                 )) : <h3>LOADING...</h3>}
             </div>

@@ -18,14 +18,13 @@ function NPCsList() {
 
     return (
         <div className='world'>
-            <div className='worldcontainer'>
+            <div className='itemscontainer'>
             {npcs ? npcs.map((npc, index) => (
-                <div key={index}>
-                    <h2>{npc.name}</h2>
-                    <img src={npc.image} alt={npc.name}/>
-                    <h2>{npc.role}</h2>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{npc.name}</h2>
+                    <img className='itemimage'src={npc.image} alt={npc.name}/>
+                    <h2 className='itemeffect'>{npc.role}</h2>
                     <h2>{npc.location}</h2>
-                    <hr/>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

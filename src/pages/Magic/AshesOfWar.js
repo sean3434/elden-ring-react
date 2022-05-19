@@ -23,8 +23,7 @@ function AshesOfWarList() {
                     <div className='singleitemcontainer' key={index}>
                         <h2 className='itemname'>{ash.name}</h2>
                         <img className='itemimage' src={ash.image} alt={ash.name}/>
-                        <h2 className='itemeffect' >{ash.description}</h2>
-                        <hr/>
+                        <h2 className='itemeffect' >{ash.description.substring(0,120)}..</h2>
                 </div>
                 )) : <h3>LOADING...</h3>}
             </div>

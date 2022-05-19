@@ -18,13 +18,12 @@ function CreaturesList() {
 
     return (
         <div className='world'>
-            <div className='worldcontainer'>
+            <div className='itemscontainer'>
             {creatures ? creatures.map((creature, index) => (
-                <div key={index}>
-                    <h2>{creature.name}</h2>
-                    <img src={creature.image} alt={creature.name}/>
-                    <h2>{creature.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{creature.name}</h2>
+                    <img className='itemimage'src={creature.image} alt={creature.name}/>
+                    <h2 className='itemeffect'>{creature.description}</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

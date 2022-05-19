@@ -18,13 +18,12 @@ function BossesList() {
 
     return (
         <div className='world'>
-            <div className='worldcontainer'>
+            <div className='itemscontainer'>
             {bosses ? bosses.map((boss, index) => (
-                <div key={index}>
-                    <h2>{boss.name}</h2>
-                    <img src={boss.image} alt={boss.name}/>
-                    <h2>{boss.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{boss.name}</h2>
+                    <img className='itemimage'src={boss.image} alt={boss.name}/>
+                    <h2 className='itemeffect'>{boss.description.substring(0,125)}..</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

@@ -18,13 +18,12 @@ function WeaponsList() {
 
     return (
         <div className='gear'>
-            <div className='gearcontainer'>
+            <div className='itemscontainer'>
             {weapons ? weapons.map((weapon, index) => (
-                <div key={index}>
-                    <h2>{weapon.name}</h2>
-                    <img src={weapon.image} alt={weapon.name}/>
-                    <h2>{weapon.description}</h2>
-                    <hr/>
+                <div className='singleitemcontainer'key={index}>
+                    <h2 className='itemname'>{weapon.name}</h2>
+                    <img className='itemimage'src={weapon.image} alt={weapon.name}/>
+                    <h2 className='itemeffect'>{weapon.description.substring(0,125)}..</h2>
                 </div>
             )) : <h3>LOADING...</h3>}
             </div>

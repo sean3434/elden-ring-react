@@ -18,13 +18,12 @@ function SorceriesList() {
 
     return (
         <div className='magic'>
-            <div className='magiccontainer'>
+            <div className='itemscontainer'>
                 {sorceries ? sorceries.map((sorceries, index) => (
-                    <div key={index}>
-                        <h2>{sorceries.name}</h2>
-                        <img src={sorceries.image} alt={sorceries.name}/>
-                        <h2>{sorceries.effects}</h2>
-                        <hr/>
+                    <div className='singleitemcontainer'key={index}>
+                        <h2 className='itemname'>{sorceries.name}</h2>
+                        <img className='itemimage' src={sorceries.image} alt={sorceries.name}/>
+                        <h2  className='itemeffect'>{sorceries.effects}</h2>
                     </div>
             )) : <h3>LOADING...</h3>}
             </div>
