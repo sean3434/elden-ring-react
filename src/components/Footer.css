@@ -2,22 +2,22 @@
     z-index: 5;
     max-width: 100vw;
     display: flex;
-    background-color: #1e1e1ef8;
+    background-color: #1e1e1e;
     /* justify-Content: space-around; */
-    height: 10vh;
+    height: 7vh;
     font-size: 1.75vw;
     border-top:  solid #cead64 5px;
-    border-bottom:  solid #cead64 5px;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    position: sticky; bottom: -0.5px;
 }
 
 .linkedin {
     max-width: 39px;
     max-height: auto;
     margin-right: .1em;
-    margin-top: .6em;
+    margin-top: .2em;
 }
 
 .github {
@@ -25,7 +25,7 @@
     max-height: auto;
     color: #dcba71;
     margin-left: .1em;
-    margin-top: .6em;
+    margin-top: .2em;
 }
 
 .footerbottomtext {
@@ -34,5 +34,6 @@
     text-align: center;
     color: #dcba71;
     font-size: 1.75vw;
-    margin-bottom: .8em;
+    margin-bottom: 1em;
+    white-space: pre;
 }
