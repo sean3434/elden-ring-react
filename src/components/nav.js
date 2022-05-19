@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import './nav.css'
-import image from '../Media/eldenringtext.png'
+import image from '../media/eldenringtext.png'
 
 const Navbar = () => {
 	return (

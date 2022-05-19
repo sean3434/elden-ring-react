@@ -1,25 +1,25 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/nav.js"
-import Footer from "./components/Footer"
-import Home from "./pages/Home"
-import Magic from "./pages/Magic";
-import Gear from "./pages/Gear";
-import ItemsList from "./pages/Items";
-import TalismansList from "./pages/Talismans";
-import World from "./pages/World";
-import AshesOfWarList from "./pages/Magic/AshesOfWar";
-import IncantationsList from "./pages/Magic/Incantations";
-import SorceriesList from "./pages/Magic/Sorceries";
-import SpiritsList from "./pages/Magic/Spirits";
-import AmmosList from "./pages/Gear/Ammos";
-import ArmorsList from "./pages/Gear/Armors";
-import ShieldsList from "./pages/Gear/Shields";
-import WeaponsList from "./pages/Gear/Weapons";
-import BossesList from "./pages/World/Bosses";
-import CreaturesList from "./pages/World/Creatures";
-import LocationsList from "./pages/World/Locations";
-import NPCsList from "./pages/World/NPCs";
+import Footer from "./components/footer"
+import Home from "./pages/home"
+import Magic from "./pages/magic";
+import Gear from "./pages/gear";
+import ItemsList from "./pages/items";
+import TalismansList from "./pages/talismans";
+import World from "./pages/world";
+import AshesOfWarList from "./pages/magic/AshesOfWar";
+import IncantationsList from "./pages/magic/Incantations";
+import SorceriesList from "./pages/magic/Sorceries";
+import SpiritsList from "./pages/magic/Spirits";
+import AmmosList from "./pages/gear/Ammos";
+import ArmorsList from "./pages/gear/Armors";
+import ShieldsList from "./pages/gear/Shields";
+import WeaponsList from "./pages/gear/Weapons";
+import BossesList from "./pages/world/Bosses";
+import CreaturesList from "./pages/world/Creatures";
+import LocationsList from "./pages/world/Locations";
+import NPCsList from "./pages/world/NPCs";
 
 
 function App() {

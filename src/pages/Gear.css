@@ -1,5 +1,5 @@
 .gear {
-    background: url('../Media/Gear.jpeg') no-repeat center fixed;     
+    background: url('../media/Gear.jpeg') no-repeat center fixed;     
     background-size: cover;
     min-height: 100vh;
 }

@@ -1,5 +1,5 @@
 .home {
-    background: url('../Media/Home.jpeg') no-repeat center fixed;     
+    background: url('../media/Home.jpeg') no-repeat center fixed;     
     background-size: cover;
     min-height: 100vh;
 }
