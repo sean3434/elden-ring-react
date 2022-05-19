@@ -8,18 +8,18 @@ import Gear from "./pages/Gear.js";
 import ItemsList from "./pages/Items.js";
 import TalismansList from "./pages/Talismans.js";
 import World from "./pages/World.js";
-import AshesOfWarList from "./pages/magic/AshesOfWar.js";
-import IncantationsList from "./pages/magic/Incantations.js";
-import SorceriesList from "./pages/magic/Sorceries.js";
-import SpiritsList from "./pages/magic/Spirits.js";
-import AmmosList from "./pages/gear/Ammos.js";
-import ArmorsList from "./pages/gear/Armors.js";
-import ShieldsList from "./pages/gear/Shields.js";
-import WeaponsList from "./pages/gear/Weapons.js";
-import BossesList from "./pages/world/Bosses.js";
-import CreaturesList from "./pages/world/Creatures.js";
-import LocationsList from "./pages/world/Locations.js";
-import NPCsList from "./pages/world/NPCs.js";
+import AshesOfWarList from "./pages/Magic/AshesOfWar.js";
+import IncantationsList from "./pages/Magic/Incantations.js";
+import SorceriesList from "./pages/Magic/Sorceries.js";
+import SpiritsList from "./pages/Magic/Spirits.js";
+import AmmosList from "./pages/Gear/Ammos.js";
+import ArmorsList from "./pages/Gear/Armors.js";
+import ShieldsList from "./pages/Gear/Shields.js";
+import WeaponsList from "./pages/Gear/Weapons.js";
+import BossesList from "./pages/World/Bosses.js";
+import CreaturesList from "./pages/World/Creatures.js";
+import LocationsList from "./pages/World/Locations.js";
+import NPCsList from "./pages/World/NPCs.js";
 
 
 function App() {
