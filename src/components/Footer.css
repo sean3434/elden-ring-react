@@ -25,7 +25,7 @@
     max-height: auto;
     color: #dcba71;
     margin-left: .1em;
-    margin-top: .2em;
+    margin-top: .1em;
 }
 
 .footerbottomtext {
@@ -33,7 +33,7 @@
     min-width: 100vw;
     text-align: center;
     color: #dcba71;
-    font-size: 1.75vw;
+    font-size: 2vh;
     margin-bottom: 1em;
     white-space: pre;
 }
