@@ -1,13 +1,13 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/nav.js"
+import Navbar from "./components/Nav.js"
 import Footer from "./components/Footer.js"
 import Home from "./pages/Home.js"
-import Magic from "./pages/magic.js";
-import Gear from "./pages/gear.js";
-import ItemsList from "./pages/items.js";
+import Magic from "./pages/Magic.js";
+import Gear from "./pages/Gear.js";
+import ItemsList from "./pages/Items.js";
 import TalismansList from "./pages/talismans.js";
-import World from "./pages/world.js";
+import World from "./pages/World.js";
 import AshesOfWarList from "./pages/magic/AshesOfWar.js";
 import IncantationsList from "./pages/magic/Incantations.js";
 import SorceriesList from "./pages/magic/Sorceries.js";
