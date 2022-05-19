@@ -2,7 +2,7 @@ import './App.css';
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/nav.js"
 import Footer from "./components/Footer.js"
-import Home from "./pages/home.js"
+import Home from "./pages/Home.js"
 import Magic from "./pages/magic.js";
 import Gear from "./pages/gear.js";
 import ItemsList from "./pages/items.js";
