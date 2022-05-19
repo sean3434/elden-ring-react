@@ -6,7 +6,7 @@ import Home from "./pages/Home.js"
 import Magic from "./pages/Magic.js";
 import Gear from "./pages/Gear.js";
 import ItemsList from "./pages/Items.js";
-import TalismansList from "./pages/talismans.js";
+import TalismansList from "./pages/Talismans.js";
 import World from "./pages/World.js";
 import AshesOfWarList from "./pages/magic/AshesOfWar.js";
 import IncantationsList from "./pages/magic/Incantations.js";
